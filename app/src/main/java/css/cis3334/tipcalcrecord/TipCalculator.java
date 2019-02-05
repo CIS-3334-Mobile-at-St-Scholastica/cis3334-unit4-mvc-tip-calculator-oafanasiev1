@@ -13,7 +13,9 @@ public class TipCalculator implements CalculatorInterface {
     public static final Double HIGH_TIP_RATE = 0.20;
 
 
-    TipCalculator(updateViewInterface mainView){
+    TipCalculator(updateViewInterface mainView)
+    {
+
         this.mainView = mainView;
     }
 
@@ -26,7 +28,7 @@ public class TipCalculator implements CalculatorInterface {
         } else {
             totalTip = LOW_TIP_RATE * bill;
         }
-        tipPerPerson = totalTip / numPeople;
+   //     tipPerPerson = totalTip / numPeople;
         mainView.updateView(totalTip,tipPerPerson);
     }
 }
